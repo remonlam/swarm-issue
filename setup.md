@@ -42,6 +42,7 @@ docker service create \
 ```bash
 docker service inspect nginx
 
+...
 "VirtualIPs": [
                 {
                     "NetworkID": "qa7qtw9vxfdzooacg0c1kwjci",
@@ -55,4 +56,4 @@ docker service inspect nginx
 ```
 The VIP address of the NGINX service is 10.100.2.2
 
-So when I do a "curl http://10.100.2.2" I expect a response from the VIP
+So from for example the TEST container I would expect a response when I do a "curl http://10.100.2.2" but all I see is connection refused...
