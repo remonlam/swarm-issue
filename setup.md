@@ -32,6 +32,7 @@ docker service create \
 ```bash
 docker service create \
   --name nginx \
+  --replicas=2 \
   --detach=true \
   --network=nginx \
   --network=test \
